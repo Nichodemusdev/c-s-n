@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <p class="s-p">developed by c.s.n</p>
+        <button onclick="clearAll()">Clear</button>
+        <div class="input-group">
+            <label for="totalAmount">Total Amount</label>
+            <input type="number" id="totalAmount" placeholder="">
+        </div>
+        <div class="input-group">
+            <label for="rate">My Rate (₦)</label>
+            <input type="number" id="rate" placeholder="">
+        </div>
+        <div class="input-group">
+            <label for="currentRate">Current Rate (₦ to $)</label>
+            <input type="number" id="currentRate" placeholder="">
+        </div>
+        <div class="input-group">
+            <label for="percentage">Percentage (%)</label>
+            <input type="number" id="percentage" placeholder="">
+        </div>
+        <button onclick="calculateResults()">Calculate</button>
+    </div>
+
+    <div class="result">
+        <h2>Result</h2>
+        <div class="result-group">
+            <label for="customerResult">Customer</label>
+            <p id="customerResult"></p>
+        </div>
+        <div class="result-group">
+            <label for="accountHolderResult">Acc Holder</label>
+            <p id="accountHolderResult"></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
